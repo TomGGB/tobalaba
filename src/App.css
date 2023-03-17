@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    height: 100%;
+    font-size: 18px;
+    background-color: black;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://educacionartistica.umce.cl/site/wp-content/uploads/2022/12/23.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-clip: initial;
+    /*se le agrega blur al fondo*/
+}
+.ContainerPrincipal{
+    width: 100%;
+    height: 100%;
+}
+.titulo {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+}

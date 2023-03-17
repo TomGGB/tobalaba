@@ -1,0 +1,79 @@
+.container-presentacion {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    /* efecto de blur con color gradiente */
+    min-width: 230px;
+    
+
+
+
+}
+
+.container-presentacion img {
+    float: left;
+    width: 70%;
+    height: auto;
+    margin-right: 20px;
+    padding: 10px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.container-presentacion h1 {
+    display: inline-block;
+    width: 400px;
+    vertical-align: auto;
+    font-size: 30px;
+    margin-top: 0;
+    /* se debe alinear hacia la derecha de la imagen */
+    text-align: left;
+    
+}
+
+.container-presentacion p {
+    display: inline-flexbox;
+    width: 100%;
+    vertical-align: top;
+    font-size: 16px;
+    margin-top: 0;
+    /* se debe alinear hacia la derecha de la imagen */
+    text-align: left;
+    /* se debe justificar el texto */
+    text-justify: inter-word;
+}
+
+.div-presentacion {
+    width: 100%;
+    min-height: 200px;
+}
+
+/*cuando la pantalla sea de menos de 600px de ancho, se debe mostrar la imagen arriba del texto y centrada*/
+@media screen and (max-width: 681px) {
+    .container-presentacion {
+        text-align: center;
+    }
+    .container-presentacion img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    .container-presentacion h1 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-presentacion p {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

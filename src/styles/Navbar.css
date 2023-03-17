@@ -1,0 +1,110 @@
+.logo {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.collapseNavbarCollapse {
+    /*este es un navbar negro, , se mostrara en una sola linea y siempre va a estar visible en la parte superior de la pagina*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    /*se le da un padding a los elementos del navbar*/
+    margin: auto;
+    /*cada elemento va a estar a la derecha del anterior*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.nav-item {
+    /*se le da un padding a los elementos del navbar*/
+    padding: 0 10px;
+    
+}
+
+.nav-link {
+    /*se le da un padding a los elementos del navbar*/
+    padding: 0 10px;
+    /*se le da un color blanco a los elementos del navbar*/
+    color: white;
+    /*se le da un tamaño a los elementos del navbar*/
+    font-size: 1.5rem;
+    /*se le da un estilo a los elementos del navbar*/
+    font-weight: 700;
+    /*se le da un estilo a los elementos del navbar*/
+    text-decoration: none;
+    /*se le da un estilo a los elementos del navbar*/
+    text-transform: uppercase;
+    /*se le da un estilo a los elementos del navbar*/
+    letter-spacing: 1px;
+    /*se le da un estilo a los elementos del navbar*/
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 1s ease-in-out;
+
+}
+
+
+.nav-link:hover {
+    border-style: groove;
+    /*se le da un estilo a los elementos del navbar*/
+    background-color: rgba(0, 0, 0, 0.8);
+    /*se le aplica blur al fondo*/
+    background: fixed;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .navbar-toggler {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .navbar-collapse {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .nav-item {
+      transition: all 0.3s ease-in-out;
+      margin: 40px;
+    }
+
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    .navbar-collapse {
+      border: none;
+    }
+
+    /*se desaparecen los elementos del navbar*/
+    
+  }
+  
