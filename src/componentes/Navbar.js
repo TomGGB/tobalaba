@@ -12,16 +12,16 @@ export function Navbar() {
         </a>
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="www.lanitakun.me">Presentación <span className="sr-only"></span></a>
+            <a className="nav-link" href="#presentacion">Presentación <span className="sr-only"></span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="www.lanitakun.me">Integrantes</a>
+            <a className="nav-link" href="#">Integrantes</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="www.lanitakun.me">Escuchanos</a>
+            <a className="nav-link" href="#">Escuchanos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="www.lanitakun.me">Contacto</a>
+            <a className="nav-link disabled" href="#">Contacto</a>
           </li>
         </ul>
       </div>
