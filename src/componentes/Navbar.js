@@ -16,15 +16,20 @@ export function Navbar() {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop >= 0 && !scrolled) {
+        setScrolled(true);
+      } else if (scrollTop <= 0 && scrolled) {
+        setScrolled(false);
+      }
+    };
+    
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  }, [scrolled]);
 
   return (
       <><button
@@ -53,16 +58,16 @@ export function Navbar() {
         ></button>
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#presentacion">Presentación <span className="sr-only"></span></a>
+            <a className="nav-link" href="www.lanitakun.me">Presentación <span className="sr-only"></span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Integrantes</a>
+            <a className="nav-link" href="www.lanitakun.me">Integrantes</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Escuchanos</a>
+            <a className="nav-link" href="www.lanitakun.me">Escuchanos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">Contacto</a>
+            <a className="nav-link disabled" href="www.lanitakun.me">Contacto</a>
           </li>
         </ul>
       </div></>
