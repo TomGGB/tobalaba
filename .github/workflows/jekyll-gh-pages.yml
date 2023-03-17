@@ -53,3 +53,10 @@ jobs:
         uses: actions/deploy-pages@v1
       - name: Deploy React to GitHub Pages
         uses: bitovi/github-actions-react-to-ghp@v1.2.0
+        with:
+            # Specifies if this action should checkout the code
+          checkout: true
+            # Specifies the path of the static assets after building
+          path: "build/static"
+            # Specifies the command to run after npm ci for the build
+          build_command: npm run build
