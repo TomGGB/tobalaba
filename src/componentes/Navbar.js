@@ -15,13 +15,13 @@ export function Navbar() {
             <a className="nav-link" href="#presentacion">Presentación <span className="sr-only"></span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Integrantes</a>
+            <a className="nav-link" href="#presentacion">Integrantes</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Escuchanos</a>
+            <a className="nav-link" href="#presentacion">Escuchanos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">Contacto</a>
+            <a className="nav-link disabled" href="#presentacion">Contacto</a>
           </li>
         </ul>
       </div>
