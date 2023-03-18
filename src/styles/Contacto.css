@@ -1,0 +1,13 @@
+.container-contacto {
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    /*centrar el contenido*/
+    margin-left: auto;
+    margin-right: auto;
+
+}

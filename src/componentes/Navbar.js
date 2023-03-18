@@ -31,7 +31,7 @@ export function Navbar() {
   }, []);
   
   return (
-      <div className= "collapseNavbarCollapse" style={{ backgroundColor: scroll ? "black" : "transparent", transition: "0.5s" }}>
+      <div className= "collapseNavbarCollapse" style={{ backgroundColor: scroll ? "rgba(0,0,0,0.7)" : "transparent",transition: "0.5s",}}>
         
         <a className="logonavbar" href="#presentacion">
           <img src={logo} alt="Logo de Tobalaba Marka" style={{ width: "70px", height: "auto", margin: "10px" }} />
@@ -53,16 +53,16 @@ export function Navbar() {
                                           listStyle: isMobile ? "none" : "none",
                                           }}>
           <li className="nav-item">
-            <a className="nav-link" href="#presentacion">Presentación <span className="sr-only"></span></a>
+            <a className="nav-link" href="#presentacion" onClick={() => window.location.href = '#presentacion'}>Presentación <span className="sr-only"></span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#presentacion">Integrantes</a>
+            <a className="nav-link" href="#presentacion" onClick={() => window.location.href = '#seccion'}>Integrantes</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#presentacion">Escuchanos</a>
+            <a className="nav-link" href="#plataformas" onClick={() => window.location.href = '#plataformas'}>Escuchanos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#presentacion">Contacto</a>
+            <a className="nav-link disabled" href="#contacto" onClick={() => window.location.href = '#contacto'}>Contacto</a>
           </li>
         </ul>
         <div className="menu_bar" style={{ display: isMobile ? "none" : "initial",

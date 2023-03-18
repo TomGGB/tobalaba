@@ -1,0 +1,79 @@
+.container-plataformas {
+    min-height: 200px;
+    /*se centra el contenido*/
+    margin-inline: 20%;
+    /*efecto de blur con color gradiente*/
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    /*se agrega borde*/
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /*se agrega padding*/
+    padding: 20px;
+    /*se agrega box-sizing*/
+    box-sizing: border-box;
+    /*se agrega border-radius*/
+    border-radius: 10px;
+
+    /*se agrega color*/
+    color: white;
+    /*se agrega min-width*/
+    min-width: 230px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+
+
+}
+
+.plataforma {
+    width: 100%;
+    
+    min-height: 200px;
+
+    margin: 20px;
+}
+
+.icono {
+    width: 60px;
+    height: auto;
+    /*se le agrega bordes y sombras*/
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /*se pone un color de fondo con gradiente*/
+}
+
+/*cuando la pantalla sea de menos de 768px de ancho, se debe mostrar la imagen arriba del texto y centrada*/
+@media screen and (max-width: 768px) {
+    .container-plataformas {
+        text-align: center;
+        margin-inline: 7%;
+        transition: ease-in-out 0.5s;
+    }
+    .container-plataformas img {
+        margin: auto;
+    }
+
+    .icono {
+        width: 50px;
+        height: auto;
+        /*se le agrega bordes y sombras*/
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+}
+
+/*cuando sea mas de 768px de ancho, se debe mostrar la imagen a la izquierda del texto*/
+@media screen and (min-width: 768px) {
+    .container-plataformas {
+        text-align: left;
+        margin-inline: 20%;
+        transition: ease-in-out 0.5s;
+    }
+    .container-plataformas img {
+        margin: 0;
+    }
+}

@@ -49,3 +49,14 @@ h1{
     line-height: 1.1;
     color: white;
 }
+
+.separador{
+    margin: 5%;
+}
+
+.titulo {
+    font-family: 'bebas neue', cursive;
+    /*anade separacion entre letras*/
+    letter-spacing: 0.1em;
+    /*anade separacion entre palabras*/
+}

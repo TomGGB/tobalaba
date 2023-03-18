@@ -5,7 +5,7 @@ import "../styles/Presentacion.css";
 
 export function Presentacion() {
   return (
-    <div className="container-presentacion" id="presentacion">
+    <div className="container-presentacion">
       <img 
         className="logo"
         src={logo}

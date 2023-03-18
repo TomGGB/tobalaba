@@ -41,6 +41,9 @@
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
     width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    user-select: none;
 }
 
 .navbar-nav {
