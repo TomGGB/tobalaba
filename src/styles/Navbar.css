@@ -1,11 +1,12 @@
 .logonavbar {
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
-    padding-bottom: 10px;
 
     /*siempre va a estar a la izquiera del todo en la pantalla*/
     position: fixed;
     left: 0;
+    height: 70;
+    width: 70;
     
 
 }

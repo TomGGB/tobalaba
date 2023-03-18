@@ -60,3 +60,18 @@ h1{
     letter-spacing: 0.1em;
     /*anade separacion entre palabras*/
 }
+
+.frameInstagram{
+    width: 40%;
+    height: 600px;
+    border: 0;
+    /*se le agrega blur al fondo*/
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .frameInstagram{
+        width: 90%;
+        transition: ease-in-out 0.3s;
+    }
+}
