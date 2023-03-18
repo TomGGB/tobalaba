@@ -7,6 +7,7 @@ export function Plataformas() {
         <div className="container-plataformas" id="plataformas">
             <div className="div-plataformas">
                 <p className="texto-plataformas">
+                <iframe title="iframeSpotify" src="https://open.spotify.com/embed/track/4TKpYN3iQcztXHlfdel2Qa" className="spotify-embed" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     <a href="https://www.facebook.com/tobalabamarka" target="_blank" rel="noreferrer" className="plataforma">
                         <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" className="icono"/>
                     </a>
