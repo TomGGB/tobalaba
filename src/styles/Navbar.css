@@ -1,6 +1,30 @@
-.logo {
+.logonavbar {
     transition: all 0.3s ease-in-out;
-    text-decoration: none;
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    /*siempre va a estar a la izquiera del todo en la pantalla*/
+    position: fixed;
+    left: 0;
+    
+
+}
+
+.menu_bar {
+  background-image: url('../img/menu.png');
+  background-size: cover;
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  display: initial;
+  image-rendering: auto;
+}
+
+.scrolled
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 1s ease-in-out;
 }
 .collapseNavbarCollapse {
     /*este es un navbar negro, , se mostrara en una sola linea y siempre va a estar visible en la parte superior de la pagina*/
@@ -16,6 +40,7 @@
     z-index: 1;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
+    width: 100%;
 }
 
 .navbar-nav {
@@ -31,8 +56,11 @@
 }
 
 .nav-item {
-    /*se le da un padding a los elementos del navbar*/
-    padding: 0 10px;
+    font-size: 1.2rem;
+    /*siempre se queda en el centro de la pantalla*/
+    margin: 0 10px;
+    /*se le da un estilo a los elementos del navbar*/
+    font-weight: 800;
     
 }
 
@@ -41,38 +69,38 @@
     padding: 0 10px;
     /*se le da un color blanco a los elementos del navbar*/
     color: white;
-    /*se le da un tamaño a los elementos del navbar*/
-    font-size: 1.5rem;
     /*se le da un estilo a los elementos del navbar*/
-    font-weight: 700;
+    font-weight: 800;
     /*se le da un estilo a los elementos del navbar*/
     text-decoration: none;
     /*se le da un estilo a los elementos del navbar*/
     text-transform: uppercase;
     /*se le da un estilo a los elementos del navbar*/
-    letter-spacing: 1px;
-    /*se le da un estilo a los elementos del navbar*/
-    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.5px;
+
+    
+
+    /*se oculta el borderstyle*/
+    border-style: hidden;
 }
 
-.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: background-color 1s ease-in-out;
 
-}
 
 
 .nav-link:hover {
-    border-style: groove;
+    border-style: dotted;
     /*se le da un estilo a los elementos del navbar*/
     background-color: rgba(0, 0, 0, 0.8);
     /*se le aplica blur al fondo*/
-    background: fixed;
+    border-radius: 15px;
+    transition: ease-in-out 0.3s;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .navbar-nav {
       flex-direction: column;
+      backdrop-filter: blur(2px);
+      border: 2px;
     }
     .navbar-nav .nav-item {
       margin-right: 0;
@@ -88,17 +116,22 @@
     .nav-item {
       transition: all 0.3s ease-in-out;
       margin: 40px;
+      font-size: 1.5rem;
     }
 
   }
   
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .navbar-nav {
       flex-direction: row;
+      /*se agrega blur al fondo*/
+      
     }
-    .navbar-nav .nav-item {
+    .nav-item {
       margin-right: 10px;
       margin-bottom: 0;
+      
+      
     }
     .navbar-collapse {
       border: none;
@@ -107,4 +140,15 @@
     /*se desaparecen los elementos del navbar*/
     
   }
+
+  /*cuando el tamanio de pantalla baja de 900px se baja el tamaño de la fuente*/
+  @media (max-width: 900px) {
+    .nav-item {
+      font-size: 1rem;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+
+
   

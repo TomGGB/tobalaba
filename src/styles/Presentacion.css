@@ -1,7 +1,7 @@
 .container-presentacion {
     position: relative;
     width: auto;
-    margin: 10px;
+    margin: 7%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -56,7 +56,7 @@
 }
 
 /*cuando la pantalla sea de menos de 600px de ancho, se debe mostrar la imagen arriba del texto y centrada*/
-@media screen and (max-width: 681px) {
+@media screen and (max-width: 768px) {
     .container-presentacion {
         text-align: center;
     }
