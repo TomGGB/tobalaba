@@ -76,7 +76,7 @@ export function Navbar() {
 
                                         }} onClick={() => setIsOpen(!isOpen)}>
                                           
-          <a className="menu_bar">
+          <a className="menu_bar" href="#presentacion">
             <span className="btn_menu">
               <i className="fas fa-bars"></i>
             </span>
