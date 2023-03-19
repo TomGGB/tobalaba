@@ -3,7 +3,7 @@ import "../styles/Plataformas.css"
 
 export function Plataformas() {
     return (
-        <><h1 className='titulo' id='plataformas'>Escuchanos</h1>
+        <><h1 className='titulo' id='plataformas'>Escúchanos</h1>
             <div className="container-plataformas" id="plataformas">
 
             <div className="div-plataformas">
