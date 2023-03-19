@@ -28,12 +28,12 @@ h1{
     justify-content: center;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://educacionartistica.umce.cl/site/wp-content/uploads/2022/12/23.jpg);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(92, 91, 91, 0.5)), url(https://educacionartistica.umce.cl/site/wp-content/uploads/2022/12/23.jpg); 
+    background-position: top center;
     background-repeat: no-repeat;
-    background-origin: initial;
-    background-clip: initial;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-size: cover;
     /*se le agrega blur al fondo*/
 }
 .ContainerPrincipal{
@@ -41,24 +41,28 @@ h1{
     height: 100%;
 }
 .titulo {
+    color: white;
+    width: 200px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-family: 'bebas neue', cursive;
+    letter-spacing: 0.1rem;
     font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 1rem 0;
     font-weight: 700;
     line-height: 1.1;
-    color: white;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 5px;
+    /*dejar al centro de la pantalla*/
+    margin: 10px auto;
+    margin-bottom: 10px;
+    
 }
 
 .separador{
     margin: 5%;
-}
-
-.titulo {
-    font-family: 'bebas neue', cursive;
-    /*anade separacion entre letras*/
-    letter-spacing: 0.1em;
-    /*anade separacion entre palabras*/
 }
 
 .frameInstagram{
@@ -73,5 +77,13 @@ h1{
     .frameInstagram{
         width: 90%;
         transition: ease-in-out 0.3s;
+    }
+    .titulo{
+        width: 90% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        /*se alinea al centro de la pantalla*/
+        margin: 10px auto !important;
     }
 }

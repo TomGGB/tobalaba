@@ -31,7 +31,13 @@ export function Navbar() {
   }, []);
   
   return (
-      <div className= "collapseNavbarCollapse" style={{ backgroundColor: scroll ? "rgba(0,0,0,0.7)" : "transparent",transition: "0.5s",}}>
+      <div className= "collapseNavbarCollapse" style={{ 
+                                                      backgroundColor: scroll ? "rgba(0,0,0,0.4)" : "black",
+                                                      transition: "0.5s",
+                                                      //efecto de blur
+                                                      backdropFilter: "blur(10px)",
+                                                      border: scroll ? "1px solid black" : "none",
+                                                      }}>
         
         <a className="logonavbar" href="#presentacion">
           <img src={logo} alt="Logo de Tobalaba Marka" style={{ width: "70px", height: "auto", margin: "10px" }} />
@@ -52,8 +58,8 @@ export function Navbar() {
                                           padding: isMobile ? "0" : "0",
                                           listStyle: isMobile ? "none" : "none",
                                           }}>
-          <li className="nav-item">
-            <a className="nav-link" href="#presentacion" onClick={() => window.location.href = '#presentacion'}>Presentación <span className="sr-only"></span></a>
+          <li className="nav-item" >
+            <a className="nav-link"    href="#presentacion" onClick={() => window.location.href = '#presentacion' }>Presentación <span className="sr-only" ></span></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#plataformas" onClick={() => window.location.href = '#plataformas'}>Escuchanos</a>

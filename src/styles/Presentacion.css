@@ -12,9 +12,12 @@
     /* efecto de blur con color gradiente */
     min-width: 230px;
     user-select: none;
+}
 
-
-
+.titulo-presentacion{
+    display: flex !important;
+    justify-content: center !important;
+    width: 500px !important;
 }
 
 .container-presentacion img {
@@ -77,3 +80,4 @@
         text-align: center;
     }
 }
+

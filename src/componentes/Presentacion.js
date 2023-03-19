@@ -6,6 +6,8 @@ import "../styles/Presentacion.css";
 export function Presentacion() {
   return (
     <div className="container-presentacion">
+      <h1 className='titulo' id='presentacion'>Presentación</h1>
+      <p className="sep"></p>
       <img 
         className="logo"
         src={logo}
