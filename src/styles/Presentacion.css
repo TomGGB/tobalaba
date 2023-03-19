@@ -15,9 +15,9 @@
 }
 
 .titulo-presentacion{
-    display: flex !important;
-    justify-content: center !important;
-    width: 500px !important;
+    display: inline-block !important;
+    /*el texto se muestra en el centro de la pantalla*/
+    text-align: center;
 }
 
 .container-presentacion img {
