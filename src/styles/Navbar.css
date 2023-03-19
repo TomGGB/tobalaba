@@ -1,13 +1,32 @@
 .logonavbar {
     transition: all 0.3s ease-in-out;
-    margin-top: 10px;
+    margin: 2px;
 
     /*siempre va a estar a la izquiera del todo en la pantalla*/
     position: fixed;
     left: 0;
     height: 70;
     width: 70;
+    border-radius: 50%;
+    /*hacer que no se pueda seleccionar, solamente el contenido*/
+    user-select: none;
+    cursor: default;
     
+
+}
+
+.logotobalaba{
+  /*se muestra siempre en el centro del div*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /*que ocupe el 100% del div*/ 
+  width: 100%;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 2px;
 
 }
 

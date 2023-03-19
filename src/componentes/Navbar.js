@@ -40,7 +40,7 @@ export function Navbar() {
                                                       }}>
         
         <a className="logonavbar" href="#presentacion">
-          <img src={logo} alt="Logo de Tobalaba Marka" style={{ width: "70px", height: "auto", margin: "10px" }} />
+          <img className="logotobalaba" src={logo} alt="Logo de Tobalaba Marka" style={{ width: "70px", height: "auto", margin: "10px" }} />
         </a>
         <ul className="navbar-nav" style={{ 
                                           display: isMobile ? "flex" : "flex",

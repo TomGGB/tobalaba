@@ -29,6 +29,10 @@
 
 }
 
+.icono {
+    border-radius: 50%;
+}
+
 .spotify-embed {
     display: block;
     width: 100%;
@@ -49,7 +53,7 @@
     height: auto;
     /*se le agrega bordes y sombras*/
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 50% !important;
     /*se pone un color de fondo con gradiente*/
 }
 
@@ -69,7 +73,7 @@
         height: auto;
         /*se le agrega bordes y sombras*/
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+        border-radius: 50%;
     }
 }
 
