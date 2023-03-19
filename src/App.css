@@ -58,6 +58,7 @@ h1{
     /*dejar al centro de la pantalla*/
     margin: 10px auto;
     margin-bottom: 30px;
+    user-select: none;
     
 }
 
