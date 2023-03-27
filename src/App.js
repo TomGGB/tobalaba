@@ -39,7 +39,7 @@ class App extends Component {
               <tbody>
                 {this.state.comentarios.map(function(comentario) {
                   return (
-                    <tr key={comentario.id_comentario}>
+                    <tr>
                       <td>{comentario.correo}</td>
                       <td>{comentario.descripcion}</td>
                     </tr>
