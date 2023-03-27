@@ -5,16 +5,24 @@ import { Contacto } from './componentes/Contacto';
 import { Plataformas } from './componentes/Plataformas';
 
 class App extends Component {
+  state = {
+    comentarios: [],
+  };
+
   componentDidMount() {
     this.peticionGet();
   }
 
   peticionGet = () => {
-    //variable de entorno
-    const dbUrl = 'process.env.REACT_APP_DB_URL';
+    const dbUrl = process.env.REACT_APP_DB_URL;
     fetch(dbUrl)
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        this.setState({
+          comentarios: data,
+        });
+      });
   };
 
   render() {
@@ -37,9 +45,9 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.comentarios.map(function(comentario) {
+                {this.state.comentarios.map(function(comentario, index) {
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td>{comentario.correo}</td>
                       <td>{comentario.descripcion}</td>
                     </tr>
