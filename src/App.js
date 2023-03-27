@@ -3,6 +3,8 @@ import { Presentacion } from './componentes/Presentacion';
 import { Navbar } from './componentes/Navbar';
 import { Contacto } from './componentes/Contacto';
 import { Plataformas } from './componentes/Plataformas';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = {
@@ -24,7 +26,7 @@ class App extends Component {
       .catch((error) => console.log(error));
   };
 
-  
+
 
   render() {
     return (
