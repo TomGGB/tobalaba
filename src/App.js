@@ -27,7 +27,7 @@ class App extends Component {
           <iframe className='frameInstagram' title='PostInstagram' width="auto" height="500" src="https://www.instagram.com/p/Cp0aOBAOO0W/embed" frameBorder="0"></iframe>
           <Plataformas />
           <Contacto />
-          <div className="table-responsive" width="90% !important" >
+          <div className="table-responsive mx-auto" width="90% !important" >
             <table className="table table-striped table-bordered">
               <thead className="thead-dark">
                 <tr>
