@@ -17,18 +17,15 @@ class App extends Component {
 
   peticionGet = () => {
     //variable de entorno almacenada en github pages secret
-    const dbUrl =
+    const DBurl =
       'https://g17c2cc7343fa57-m2ut42z9os29oik1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/comentario/comentario';
-    fetch(dbUrl)
+    fetch(DBurl)
       .then((response) => response.json())
-      .then((data) => {
-        try {
-          const comentarios = JSON.parse(data);
-          this.setState({ comentarios: comentarios });
-        } catch (error) {
-          console.error(error);
-        }
-      });
+      .then((comentarios) => {
+        this.setState({ comentarios: comentarios.items });
+      }
+      )
+      .catch((error) => console.log(error));
   };
   
 
@@ -54,14 +51,13 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.comentarios.map(function(comentario, index) {
+                {this.state.comentarios.map((comentario) => {
                   return (
                     <tr key={index}>
                       <td>{comentario.correo}</td>
                       <td>{comentario.descripcion}</td>
                     </tr>
                   );
-                })}
               </tbody>
             </table>
           </div>
