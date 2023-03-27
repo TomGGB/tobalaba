@@ -18,7 +18,7 @@ class App extends Component {
   peticionGet = () => {
     //variable de entorno almacenada en github pages secret
     const DBurl =
-      'https://g17c2cc7343fa57-m2ut42z9os29oik1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/comentario/comentario';
+      "https://g17c2cc7343fa57-m2ut42z9os29oik1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/comentario/comentario";
     fetch(DBurl)
       .then((response) => response.json())
       .then((comentarios) => {
@@ -58,6 +58,7 @@ class App extends Component {
                       <td>{comentario.descripcion}</td>
                     </tr>
                   );
+                })}
               </tbody>
             </table>
           </div>
