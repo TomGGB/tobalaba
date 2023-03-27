@@ -18,7 +18,7 @@ class App extends Component {
   peticionGet = () => {
     //variable de entorno almacenada en github pages secret
     const DBurl =
-      "https://g17c2cc7343fa57-m2ut42z9os29oik1.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/comentario/comentario";
+      process.env.REACT_APP_DB_URL;
     fetch(DBurl)
       .then((response) => response.json())
       .then((comentarios) => {
