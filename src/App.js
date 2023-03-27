@@ -14,16 +14,17 @@ class App extends Component {
   }
 
   peticionGet = () => {
+    //variable de entorno almacenada en github pages secret
     const dbUrl = process.env.REACT_APP_DB_URL;
     fetch(dbUrl)
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({
-          comentarios: data,
-        });
-      });
+      .then((comentarios) => {
+        this.setState({ comentarios: comentarios });
+      })
+      .catch((error) => console.log(error));
   };
+
+  
 
   render() {
     return (
