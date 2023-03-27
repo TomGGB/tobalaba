@@ -53,7 +53,7 @@ class App extends Component {
               <tbody>
                 {this.state.comentarios.map((comentario) => {
                   return (
-                    <tr key={index}>
+                    <tr key={comentario.id_comentario}>
                       <td>{comentario.correo}</td>
                       <td>{comentario.descripcion}</td>
                     </tr>
