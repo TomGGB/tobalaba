@@ -18,12 +18,16 @@ class App extends Component {
   peticionGet = () => {
     //variable de entorno almacenada en github pages secret
     const dbUrl = process.env.REACT_APP_DB_URL;
-    fetch(dbUrl)
+      fetch(dbUrl)
       .then((response) => response.json())
-      .then((comentarios) => {
-        this.setState({ comentarios: comentarios });
-      })
-      .catch((error) => console.log(error));
+      .then((data) => {
+        try {
+          const comentarios = JSON.parse(data);
+          this.setState({ comentarios: comentarios });
+        } catch (error) {
+          console.error(error);
+        }
+      });
   };
 
 
