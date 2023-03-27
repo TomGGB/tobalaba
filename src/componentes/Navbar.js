@@ -65,7 +65,7 @@ export function Navbar() {
             <a className="nav-link" href="#plataformas" onClick={() => window.location.href = '#plataformas'}>Escuchanos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#contacto" onClick={() => window.location.href = '#contacto'}>Contacto</a>
+            <a className="nav-link" href="#contacto" onClick={() => window.location.href = '#contacto'}>Contacto</a>
           </li>
         </ul>
         <div className="menu_bar" style={{ display: isMobile ? "none" : "initial",
