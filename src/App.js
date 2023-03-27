@@ -10,6 +10,7 @@ class App extends Component {
   }
 
   peticionGet = () => {
+    //variable de entorno
     const dbUrl = process.env.REACT_APP_DB_URL;
     fetch(dbUrl)
       .then((response) => response.json())
