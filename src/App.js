@@ -6,7 +6,6 @@ import { Plataformas } from './componentes/Plataformas';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 class App extends Component {
   state = {
     comentarios: [],
@@ -17,8 +16,9 @@ class App extends Component {
   }
 
   peticionGet = () => {
+    console.log(process.env.REACT_APP_DB_URL);
     //variable de entorno almacenada en github pages secret
-    const DBurl = proccess.env.REACT_APP_DB_URL;
+    const DBurl = "proccess.env.REACT_APP_DB_URL";
     fetch(DBurl)
       .then((response) => response.json())
       .then((comentarios) => {
@@ -32,7 +32,6 @@ class App extends Component {
 
 
   render() {
-    console.log()
     return (
       <div className="App">
         <Navbar />
