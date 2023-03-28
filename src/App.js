@@ -8,25 +8,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   state = {
-    comentarios: [],
+    comentarios: []
   };
 
   componentDidMount() {
     this.peticionGet();
   }
 
+  
   peticionGet = () => {
-    //variable de entorno almacenada en github pages secret
     const DBurl = process.env.REACT_APP_DB_URL;
     fetch(DBurl)
-      .then((response) => response.json())
-      .then((comentarios) => {
-        this.setState({ comentarios: comentarios.items });
-      }
-      )
-      .catch((error) => console.log(error));
-  };
+      .then(response => response.json())
+      .then(data => {
+        const comentarios = data.items; // aquí asignamos los comentarios del array "items"
+        this.setState({ comentarios });
+      })
+      .catch(err => console.log(err));
+  }
   
+
 
 
 
@@ -50,7 +51,7 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.comentarios.map((comentario) => {
+                {this.state.comentarios.map(comentario => {
                   return (
                     <tr key={comentario.id_comentario}>
                       <td>{comentario.correo}</td>
