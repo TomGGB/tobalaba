@@ -5,8 +5,6 @@ import { Contacto } from './componentes/Contacto';
 import { Plataformas } from './componentes/Plataformas';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//se importa el dotenv para poder usar las variables de entorno
-import env from 'react-dotenv';
 
 
 class App extends Component {
@@ -20,8 +18,7 @@ class App extends Component {
 
   peticionGet = () => {
     //variable de entorno almacenada en github pages secret
-    const DBurl =
-      env.REACT_APP_DB_URL;
+    const DBurl = proccess.env.REACT_APP_DB_URL;
     fetch(DBurl)
       .then((response) => response.json())
       .then((comentarios) => {
