@@ -7,7 +7,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import dotenv from 'dotenv';
 
-require('dotenv').config();
+dotenv.config();
 
 
 class App extends Component {
