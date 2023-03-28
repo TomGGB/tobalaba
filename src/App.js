@@ -21,7 +21,7 @@ class App extends Component {
     fetch(DBurl)
       .then(response => response.json())
       .then(data => {
-        const comentarios = data.items; // aquí asignamos los comentarios del array "items"
+        const comentarios = data.items; // aquí asignamos los comentarios del array , que es lo que nos interesa
         this.setState({ comentarios });
       })
       .catch(err => console.log(err));
