@@ -16,9 +16,8 @@ class App extends Component {
   }
 
   peticionGet = () => {
-    console.log(process.env.REACT_APP_DB_URL);
     //variable de entorno almacenada en github pages secret
-    const DBurl = "proccess.env.REACT_APP_DB_URL";
+    const DBurl = process.env.REACT_APP_DB_URL;
     fetch(DBurl)
       .then((response) => response.json())
       .then((comentarios) => {
