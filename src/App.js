@@ -5,6 +5,10 @@ import { Contacto } from './componentes/Contacto';
 import { Plataformas } from './componentes/Plataformas';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import dotenv from 'dotenv';
+
+require('dotenv').config();
+
 
 class App extends Component {
   state = {
