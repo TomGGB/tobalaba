@@ -62,7 +62,7 @@ export function Navbar() {
             <a className="nav-link"    href="#presentacion" onClick={() => window.location.href = '#presentacion' }>Presentación <span className="sr-only" ></span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#plataformas" onClick={() => window.location.href = '#plataformas'}>Escuchanos</a>
+            <a className="nav-link" href="#plataformas" onClick={() => window.location.href = '#plataformas'}>Escúchanos</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#contacto" onClick={() => window.location.href = '#contacto'}>Contacto</a>
