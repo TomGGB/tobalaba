@@ -47,7 +47,7 @@ class App extends Component {
               <thead className="thead-dark">
                 <tr>
                   <th>Correo</th>
-                  <th>Descripción</th>
+                  <th>Descripción:</th>
                 </tr>
               </thead>
               <tbody>
