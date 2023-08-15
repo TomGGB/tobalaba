@@ -63,7 +63,7 @@ h1{
 }
 
 .separador{
-    margin: 10%;
+    margin: 5%;
 }
 
 .frameInstagram{
@@ -86,5 +86,9 @@ h1{
         text-align: center !important;
         /*se alinea al centro de la pantalla*/
         margin: 10px auto !important;
+    }
+
+    .separador {
+        margin: 10%;
     }
 }
