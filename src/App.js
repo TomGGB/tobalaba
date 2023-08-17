@@ -43,7 +43,8 @@ class App extends Component {
           <iframe className='frameInstagram' title='PostInstagram' width="auto" height="500" src="https://www.instagram.com/p/Cp0aOBAOO0W/embed" frameBorder="0"></iframe>
           <Plataformas />
           <Contacto />
-          
+        </div>
+      </div>
     );
   }
 }
