@@ -10,7 +10,7 @@ export function Contacto() {
             <h1 className='titulo' id='contacto'>Contacto</h1>
             <div className="whatsapp">
                 <a href="https://wa.me/+56956570689" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="whatsapp" />
+                    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="whatsap" />
                 </a>
             </div>
         </div>
